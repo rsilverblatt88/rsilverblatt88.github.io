@@ -1,0 +1,9 @@
+.image.avatar48 img {
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+  }
+
+  .project-description{
+    font-size: 9px;
+  }
