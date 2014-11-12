@@ -271,6 +271,11 @@
 				.splash {
 					width: 300px;
 					height: 240px;
+					transition: background-color .5s ease;
+				}
+
+				.splash:hover {
+					opacity: .50;
 				}
 
 				.icon-skill {
