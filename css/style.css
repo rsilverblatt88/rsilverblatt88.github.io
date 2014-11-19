@@ -279,7 +279,7 @@
 				}
 
 				.icon-skill {
-					color: #1F67C1;
+					color: #18A1D9;
 				}
 
 	/* List */
@@ -706,7 +706,7 @@
 
 							#nav ul li a.active span:before
 							{
-								color: #e27689;
+								color: #18A1D9;
 							}
 
 /*********************************************************************************/
@@ -800,8 +800,7 @@
 
 			#main > section.one
 			{
-				background-color: #81918E;
-				background-image: url('../images/banner.jpg');
+				background-color: #18A1D9;
 			}
 
 			#main > section.two

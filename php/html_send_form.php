@@ -19,7 +19,7 @@ if(isset($_POST['email'])) {
     // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
-        !isset($_POST['message']){
+        !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
@@ -58,6 +58,12 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
+
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$headers .= 'From: Mailer <mailer@example.com>' . "\r\n";
+
+
 @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
